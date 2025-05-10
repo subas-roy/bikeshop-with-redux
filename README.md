@@ -1,4 +1,4 @@
-# Bike-shop-with-Redux
+# BikeShop-With-Redux
 
 ## Installation: Clone the repository.
 
@@ -16,12 +16,4 @@
 3. Install dependencies using `npm install`.
 4. Run the project using `npm run dev`.
 
-## Deployments
-
-Backend: `link`
-Frontend: `link`
-
-## For admin login
-
-Email: `email`
-Password: `pass`
+## Live link: https://bikeshop-frontend-black.vercel.app/
