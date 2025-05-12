@@ -1,20 +1,21 @@
 # BikeShop-With-Redux
 
 ## Installation: Clone the repository.
+- Change directory using `cd bikeShop-with-redux`.
 
 ### Install backend
 
-1. Change directory using `cd backend`.
-2. Create `.env file`.
-3. Install dependencies using `npm install`.
-4. Install mongoose using `npm install mongoose --save`.
-5. Run the project using `npm run start:dev`.
+- Change directory using `cd backend`.
+- Create `.env file`.
+- Install dependencies using `npm install`.
+- Install mongoose using `npm install mongoose --save`.
+- Run the project using `npm run start:dev`.
 
 ### Install frontend
 
-2. Change directory using `cd frontend`.
-3. Install dependencies using `npm install`.
-4. Run the project using `npm run dev`.
+- Change directory using `cd frontend`.
+- Install dependencies using `npm install`.
+- Run the project using `npm run dev`.
 
 ## Live link: https://bikeshop-frontend-black.vercel.app/
 
