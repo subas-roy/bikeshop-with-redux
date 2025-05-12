@@ -1,6 +1,7 @@
 # BikeShop-With-Redux
 
-## Installation: Clone the repository.
+## Installation
+- Clone the repository using `https://github.com/subas-roy/bikeshop-with-redux.git`.
 - Change directory using `cd bikeShop-with-redux`.
 
 ### Install backend
