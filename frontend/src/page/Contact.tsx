@@ -31,7 +31,7 @@ const Contact = () => {
       </div>
 
       {/* Two-column layout: Left = Map + Contact Info, Right = Form */}
-      <div className="max-w-5xl mx-auto py-16 px-6 grid gap-12 md:grid-cols-2">
+      <div className="max-w-7xl mx-auto py-16 px-6 grid gap-12 md:grid-cols-2">
         {/* Left Column */}
 
         <div className="space-y-6 text-gray-800">

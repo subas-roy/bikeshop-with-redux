@@ -17,7 +17,7 @@ export default function FAQPage() {
       </div>
 
       {/* Accordion */}
-      <div className="max-w-3xl mx-auto space-y-2">
+      <div className="max-w-7xl mx-auto space-y-2">
         {[
           {
             q: "Do you offer bike rentals?",

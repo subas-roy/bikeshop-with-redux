@@ -24,10 +24,10 @@ const Cart = () => {
   const [createOrder] = useCreateOrderMutation();
 
   const handleCheckout = async () => {
-    const formattedProducts = cartData.items.map(item => ({
+    const formattedProducts = cartData.items.map((item) => ({
       product: item.productId,
       quantity: item.quantity,
-      stock: item.stock
+      stock: item.stock,
     }));
 
     const toastId = "cart";
@@ -46,12 +46,14 @@ const Cart = () => {
         toast.error("Payment URL not found!", { id: toastId });
       }
     } catch (err: any) {
-      toast.error(err?.data?.message || "Something went wrong!", { id: toastId });
+      toast.error(err?.data?.message || "Something went wrong!", {
+        id: toastId,
+      });
     }
   };
 
   return (
-    <div className="p-6">
+    <div className="max-w-7xl mx-auto p-6">
       <h2 className="text-2xl font-bold mb-4">🛒 Your Cart</h2>
 
       {cartItems.length === 0 ? (

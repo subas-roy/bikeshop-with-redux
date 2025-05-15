@@ -8,8 +8,6 @@ import { useGetAllSemestersQuery } from "../redux/features/Products/productApi";
 import { useAppSelector } from "../redux/hook";
 import AllProductSidebar from "../components/AllProductsidebar";
 
-
-
 const AllProduct = () => {
   const { data: response, isLoading } = useGetAllSemestersQuery(undefined);
   const query = useAppSelector((state) => state.search.query.toLowerCase());
@@ -38,7 +36,10 @@ const AllProduct = () => {
   // Pagination logic
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = filtered.slice(indexOfFirstProduct, indexOfLastProduct);
+  const currentProducts = filtered.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
   const totalPages = Math.ceil(filtered.length / productsPerPage);
 
   const handlePageChange = (page: number) => {
@@ -69,13 +70,15 @@ const AllProduct = () => {
       {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 mt-10">
         {/* Sidebar */}
-        <AllProductSidebar onApplyFilters={function (): void {
-          throw new Error("Function not implemented.");
-        } } />
+        <AllProductSidebar
+          onApplyFilters={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+        />
 
         {/* Products grid */}
         <div>
-          <div className="flex items-center justify-between mb-4">
+          <div className="max-w-7xl mx-auto flex items-center justify-between mb-4">
             <p className="text-gray-700 dark:text-gray-300 font-medium">
               {filtered.length} Products Found
             </p>
