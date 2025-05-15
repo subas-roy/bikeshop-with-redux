@@ -10,8 +10,10 @@ const RecommendedProducts = () => {
 
   return (
     <div className="mt-8">
-      <h2 className="text-2xl text-gray-700 text-center font-bold mb-4">Recommended Products</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <h2 className="text-2xl text-gray-700 text-center font-bold mb-4">
+        Recommended Products
+      </h2>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {products?.map((product: any) => (
           <div
             key={product._id}
@@ -31,12 +33,17 @@ const RecommendedProducts = () => {
               </div>
             </div>
 
-            <h3 className="text-lg text-gray-700 font-semibold mt-2">{product.name}</h3>
+            <h3 className="text-lg text-gray-700 font-semibold mt-2">
+              {product.name}
+            </h3>
             {/* <p className="text-gray-600 text-sm">{product.brand}</p> */}
 
             {/* Show discounted price */}
             <p className="text-primary font-bold mt-2">
-              ${product.price * 0.9} <span className="line-through text-gray-500">${product.price}</span>
+              ${product.price * 0.9}{" "}
+              <span className="line-through text-gray-500">
+                ${product.price}
+              </span>
             </p>
           </div>
         ))}

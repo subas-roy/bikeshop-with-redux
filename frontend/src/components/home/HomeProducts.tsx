@@ -4,9 +4,9 @@ import { useGetAllSemestersQuery } from "../../redux/features/Products/productAp
 
 const HomeProducts = () => {
   const { data, isLoading } = useGetAllSemestersQuery(undefined);
-  const products = data?.data?.slice(0, 6); 
+  const products = data?.data?.slice(0, 6);
 
-  if (isLoading) return <div className="text-center py-10">Loading...</div>
+  if (isLoading) return <div className="text-center py-10">Loading...</div>;
 
   return (
     <div className="py-8 bg-gray-100">
@@ -17,7 +17,7 @@ const HomeProducts = () => {
         </span>
       </h2>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
         {products?.map((product: any) => (
           <div
             key={product._id}

@@ -60,7 +60,7 @@ const ProductDetails = () => {
 
   return (
     <div className="w-full bg-gray-100 py-10 min-h-screen">
-      <div className="max-w-4xl mx-auto px-6 border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 border-gray-200">
         <div className="grid md:grid-cols-2 gap-10 items-start justify-end">
           {/* Image Section */}
           <div className="relative group">
@@ -105,13 +105,13 @@ const ProductDetails = () => {
                 {product.category}
               </p>
               <p className="text-gray-600">
-                <span className="font-semibold text-gray-800">
-                  Stock:
-                </span>{" "}
+                <span className="font-semibold text-gray-800">Stock:</span>{" "}
                 {product.stock > 1 ? (
                   <span className="text-green-600">Available</span>
                 ) : (
-                  <span className="font-semibold bg-gradient-to-r from-rose-500 via-orange-400 to-yellow-500 text-white rounded-xl px-2">sold out</span>
+                  <span className="font-semibold bg-gradient-to-r from-rose-500 via-orange-400 to-yellow-500 text-white rounded-xl px-2">
+                    sold out
+                  </span>
                 )}
               </p>
             </div>

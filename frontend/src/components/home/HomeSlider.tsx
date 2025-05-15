@@ -2,9 +2,7 @@ import { motion } from "framer-motion";
 
 const HomeSlider = () => {
   return (
-    <div className="w-full max-w-6xl mx-auto relative">
-      
-
+    <div className="w-full mx-auto relative">
       <div className="carousel w-full shadow-2xl overflow-hidden relative">
         {/* Slide 1 */}
         <div id="item1" className="carousel-item w-full relative group">
@@ -13,7 +11,6 @@ const HomeSlider = () => {
             src="https://i.ibb.co.com/j9MFLft7/wmremove-transformed.jpg"
             alt="bike-Banner-1"
           />
-
 
           {/* Gradient + Content */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center">
@@ -27,9 +24,12 @@ const HomeSlider = () => {
                 🚴‍♂️ 15% OFF on All Bikes!
               </motion.h2>
               <p className="text-white/80 hidden md:block max-w-md">
-                Discover powerful rides with comfort and speed – available now at discounted rates!
+                Discover powerful rides with comfort and speed – available now
+                at discounted rates!
               </p>
-              <button className="btn mt-4 btn-secondary shadow-lg">Shop Now</button>
+              <button className="btn mt-4 btn-secondary shadow-lg">
+                Shop Now
+              </button>
             </div>
           </div>
 
@@ -38,9 +38,24 @@ const HomeSlider = () => {
 
           {/* Navigation Buttons */}
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-            <a href="#item1" className="btn btn-xs btn-neutral opacity-80 hover:opacity-100">1</a>
-            <a href="#item2" className="btn btn-xs btn-neutral opacity-80 hover:opacity-100">2</a>
-            <a href="#item3" className="btn btn-xs btn-neutral opacity-80 hover:opacity-100">3</a>
+            <a
+              href="#item1"
+              className="btn btn-xs btn-neutral opacity-80 hover:opacity-100"
+            >
+              1
+            </a>
+            <a
+              href="#item2"
+              className="btn btn-xs btn-neutral opacity-80 hover:opacity-100"
+            >
+              2
+            </a>
+            <a
+              href="#item3"
+              className="btn btn-xs btn-neutral opacity-80 hover:opacity-100"
+            >
+              3
+            </a>
           </div>
         </div>
 
@@ -63,9 +78,12 @@ const HomeSlider = () => {
                 🛵 Speed Meets Style
               </motion.h2>
               <p className="text-white/80 hidden md:block max-w-md ml-auto">
-                Browse our newest range of bikes perfect for urban & adventure riders.
+                Browse our newest range of bikes perfect for urban & adventure
+                riders.
               </p>
-              <button className="btn mt-4 btn-accent shadow-lg">Explore Collection</button>
+              <button className="btn mt-4 btn-accent shadow-lg">
+                Explore Collection
+              </button>
             </div>
           </div>
 
@@ -73,9 +91,24 @@ const HomeSlider = () => {
 
           {/* Navigation Buttons */}
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-            <a href="#item1" className="btn btn-xs btn-neutral opacity-80 hover:opacity-100">1</a>
-            <a href="#item2" className="btn btn-xs btn-neutral opacity-80 hover:opacity-100">2</a>
-            <a href="#item3" className="btn btn-xs btn-neutral opacity-80 hover:opacity-100">3</a>
+            <a
+              href="#item1"
+              className="btn btn-xs btn-neutral opacity-80 hover:opacity-100"
+            >
+              1
+            </a>
+            <a
+              href="#item2"
+              className="btn btn-xs btn-neutral opacity-80 hover:opacity-100"
+            >
+              2
+            </a>
+            <a
+              href="#item3"
+              className="btn btn-xs btn-neutral opacity-80 hover:opacity-100"
+            >
+              3
+            </a>
           </div>
         </div>
 
@@ -101,9 +134,24 @@ const HomeSlider = () => {
 
           {/* Navigation Buttons */}
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-            <a href="#item1" className="btn btn-xs btn-neutral opacity-80 hover:opacity-100">1</a>
-            <a href="#item2" className="btn btn-xs btn-neutral opacity-80 hover:opacity-100">2</a>
-            <a href="#item3" className="btn btn-xs btn-neutral opacity-80 hover:opacity-100">3</a>
+            <a
+              href="#item1"
+              className="btn btn-xs btn-neutral opacity-80 hover:opacity-100"
+            >
+              1
+            </a>
+            <a
+              href="#item2"
+              className="btn btn-xs btn-neutral opacity-80 hover:opacity-100"
+            >
+              2
+            </a>
+            <a
+              href="#item3"
+              className="btn btn-xs btn-neutral opacity-80 hover:opacity-100"
+            >
+              3
+            </a>
           </div>
         </div>
       </div>

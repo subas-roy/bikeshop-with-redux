@@ -28,11 +28,12 @@ const CategoryIcons = () => {
   return (
     <div className="py-8 bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
-        Explore Our <span className="bg-gradient-to-r from-yellow-500 to-teal-400 text-transparent bg-clip-text">
+        Explore Our{" "}
+        <span className="bg-gradient-to-r from-yellow-500 to-teal-400 text-transparent bg-clip-text">
           Categories
         </span>
       </h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-6">
         {categories.map((category, index) => (
           <div
             key={index}

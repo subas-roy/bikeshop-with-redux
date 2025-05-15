@@ -1,4 +1,3 @@
-
 import { FC, useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { ShoppingCartIcon, UserCircleIcon } from "@heroicons/react/24/outline";
@@ -7,7 +6,8 @@ import Logo from "./ui/logo";
 
 const Navbar: FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [showProfileDropdown, setShowProfileDropdown] = useState<boolean>(false);
+  const [showProfileDropdown, setShowProfileDropdown] =
+    useState<boolean>(false);
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
@@ -32,11 +32,21 @@ const Navbar: FC = () => {
 
   const link = (
     <>
-      <li><NavLink to="/">Home</NavLink></li>
-      <li><NavLink to="/all-product">Products</NavLink></li>
-      <li><NavLink to="/about">About</NavLink></li>
-      <li><NavLink to="/contact">Contact</NavLink></li>
-      <li><NavLink to="/faq">FAQ</NavLink></li>
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/all-product">Products</NavLink>
+      </li>
+      <li>
+        <NavLink to="/about">About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact">Contact</NavLink>
+      </li>
+      <li>
+        <NavLink to="/faq">FAQ</NavLink>
+      </li>
     </>
   );
 
@@ -45,13 +55,25 @@ const Navbar: FC = () => {
       <div className="navbar-start">
         <div className="dropdown lg:hidden">
           <div tabIndex={0} role="button" className="btn btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5"
-              fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
             </svg>
           </div>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 w-52 rounded-box bg-[#6A0DAD] text-white p-2 shadow z-10">
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 w-52 rounded-box bg-[#6A0DAD] text-white p-2 shadow z-10"
+          >
             {link}
           </ul>
         </div>
@@ -74,7 +96,9 @@ const Navbar: FC = () => {
 
           {showProfileDropdown && (
             <div className="absolute right-0 mt-2 z-50">
-              <ProfileDropdownModal onClose={() => setShowProfileDropdown(false)} />
+              <ProfileDropdownModal
+                onClose={() => setShowProfileDropdown(false)}
+              />
             </div>
           )}
         </div>
@@ -84,4 +108,3 @@ const Navbar: FC = () => {
 };
 
 export default Navbar;
-
